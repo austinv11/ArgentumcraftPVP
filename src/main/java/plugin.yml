@@ -1,0 +1,19 @@
+name: ArgentumcraftPVP
+version: 1.0.0
+description: A CTF-styled pvp mini game for the Argentumcraft server
+authors: [austinv11, grandmind1]
+website: argentumcraft.enjin.com
+ 
+main: com.enjin.argentumcraft.ArgentumcraftPVP.ArgentumcraftPVP
+commands:
+   PLACEHOLDER:
+      description: PLACEHOLDING TEXT
+      usage: /<command>
+      permission: APVP.PLACEHOLDER
+      permission-message: You don't have permission
+
+permissions:
+   APVP.*:
+        description: Gives access to all ArgentumcraftPVP related permissions
+   APVP.PLACEHOLDER
+      description: PLACEHOLDING TEXT
