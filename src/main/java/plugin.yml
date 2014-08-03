@@ -6,14 +6,22 @@ website: argentumcraft.enjin.com
  
 main: com.enjin.argentumcraft.ArgentumcraftPVP.ArgentumcraftPVP
 commands:
-   PLACEHOLDER:
-      description: PLACEHOLDING TEXT
+   aPVPStart:
+      description: Starts a pvp game.
+      usage: /<command> <killsToWin>
+      permission: APVP.startGame
+      permission-message: You don't have permission
+   
+   aPVPStop:
+      description: Stops a pvp game.
       usage: /<command>
-      permission: APVP.PLACEHOLDER
+      permission: APVP.stopGame
       permission-message: You don't have permission
 
 permissions:
    APVP.*:
         description: Gives access to all ArgentumcraftPVP related permissions
-   APVP.PLACEHOLDER
-      description: PLACEHOLDING TEXT
+   APVP.startGame:
+      description: Permission to start a pvp game.
+   APVP.stopGame:
+      description: Permission to stop a pvp game.
