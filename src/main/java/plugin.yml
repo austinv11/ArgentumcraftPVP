@@ -24,6 +24,13 @@ commands:
       permission: APVP.setSpawn
       permission-message: You don't have permission
 
+   killstreak:
+      description: Uses killstreaks or lists available ones
+      usage: /<command> or /<command> list or /<command> <various args>
+      permission: APVP.killstreak
+      permission-message: You don't have permission
+      aliases: [kill-streak,killstreaks,kill-streaks,ks]
+
 permissions:
    APVP.*:
         description: Gives access to all ArgentumcraftPVP related permissions
@@ -33,3 +40,6 @@ permissions:
       description: Permission to stop a pvp game.
    APVP.setSpawn:
       description: Permission to set a spawn for a team.
+   APVP.killstreak:
+      description: Permission to set a spawn for a team.
+      default: true

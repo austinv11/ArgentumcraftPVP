@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.enjin.argentumcraft.PVPSession.KillStreakHandler;
 import com.enjin.argentumcraft.PVPSession.PVPSession;
 
 public class ArgentumcraftPVP extends JavaPlugin{
@@ -210,6 +211,19 @@ public class ArgentumcraftPVP extends JavaPlugin{
 				return false;
 			}
 		}else if (cmd.getName().equalsIgnoreCase("killstreak")){
+			if (sender instanceof Player){
+				if (isInGame(sender.getName())){
+					if (args.length > 0){
+						new KillStreakHandler((Player) sender, args);
+					}else{
+						new KillStreakHandler((Player) sender);
+					}
+				}else{
+					sender.sendMessage("Sorry, you need to be in game to use that awesomeness");
+				}
+			}else{
+				sender.sendMessage("Bad console!");
+			}
 			return true;
 		}
 		return false;
