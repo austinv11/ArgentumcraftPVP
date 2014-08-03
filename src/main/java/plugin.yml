@@ -18,6 +18,12 @@ commands:
       permission: APVP.stopGame
       permission-message: You don't have permission
 
+   aPVPSetSpawn:
+      description: Sets a spawn point for the desired team.
+      usage: /<command> <red:blue>
+      permission: APVP.setSpawn
+      permission-message: You don't have permission
+
 permissions:
    APVP.*:
         description: Gives access to all ArgentumcraftPVP related permissions
@@ -25,3 +31,5 @@ permissions:
       description: Permission to start a pvp game.
    APVP.stopGame:
       description: Permission to stop a pvp game.
+   APVP.setSpawn:
+      description: Permission to set a spawn for a team.
